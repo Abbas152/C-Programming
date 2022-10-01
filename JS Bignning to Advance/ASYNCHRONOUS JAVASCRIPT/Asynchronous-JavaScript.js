@@ -61,12 +61,16 @@ function func() {
 }
 // setTimeout() take 2 arguments. 
 // 1st Function means it takes Callback and Time Duration in mili second
+// Browser gives setTimeout() id 
 
-setTimeout(func, 2000);
-for (let i = 0; i < 5000; i++) {
+const id = setTimeout(func, 2000);
+for (let i = 0; i < 1000; i++) {
     console.log("For Loop Running");
     
 }
+console.log("setTimeout ID is:",id);
+console.log("Clearing setTimeout");
+clearTimeout(id);
 console.log("Script End")
 
 
