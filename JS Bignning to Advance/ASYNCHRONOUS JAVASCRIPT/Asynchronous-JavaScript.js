@@ -54,24 +54,24 @@
 // ********************
 // // Another Example with setTimeout()  Please Comment Above Example Code
 
-console.log("Script Start");
+// console.log("Script Start");
 
-function func() {
-    console.log("SetTimeOut Executed")
-}
-// setTimeout() take 2 arguments. 
-// 1st Function means it takes Callback and Time Duration in mili second
-// Browser gives setTimeout() id 
+// function func() {
+//     console.log("SetTimeOut Executed")
+// }
+// // setTimeout() take 2 arguments. 
+// // 1st Function means it takes Callback and Time Duration in mili second
+// // Browser gives setTimeout() id 
 
-const id = setTimeout(func, 2000);
-for (let i = 0; i < 1000; i++) {
-    console.log("For Loop Running");
+// const id = setTimeout(func, 2000);
+// for (let i = 0; i < 1000; i++) {
+//     console.log("For Loop Running");
     
-}
-console.log("setTimeout ID is:",id);
-console.log("Clearing setTimeout");
-clearTimeout(id);   // This Clearing SetTimeOut is Clear Time and setTimeout will not Execute if it is in Queue.
-console.log("Script End")
+// }
+// console.log("setTimeout ID is:",id);
+// console.log("Clearing setTimeout");
+// clearTimeout(id);   // This Clearing SetTimeOut is Clear Time and setTimeout will not Execute if it is in Queue.
+// console.log("Script End")
 
 
 // Set Timeout Execute at Last Even Set Timeout Delay is Finish, because Event Loop Control btw Callback Queue and Call Stack, When Call Stack Free Event loop Allow to go Callback Queue code to Callstack and Execute 
