@@ -127,5 +127,14 @@
 // ********************
 // Callbacks in Asynchronous Programming
 // Callbacks
-// Callbacks hell  // Example of Change Text With Color in Intervals, Nested intervals , This code knows as callbacks Hell, Means Nested in Nested in Nested
-// Pyramid of doom
+// Callbacks hell  // Example of Change Text With Color in Intervals, Nested stTimeout , This code knows as callbacks Hell, Means Nested in Nested in Nested
+// Pyramid of doom  // Example of Change Text With Color in Intervals, Nested stTimeout , This code knows as callbacks Hell, Means Nested in Nested in Nested
+
+
+
+
+
+
+
+// ********************
+// Promises
