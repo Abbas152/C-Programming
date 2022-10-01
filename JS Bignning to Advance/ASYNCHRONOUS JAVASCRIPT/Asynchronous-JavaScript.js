@@ -85,11 +85,39 @@
 // When using the JavaScript function setInterval(), you can specify a callback function to be executed for each interval:
 
 
+// console.log("Script Start");
+// setInterval(() => {
+//     console.log(Math.random());
+// }, 2000);
+
+// console.log("Script End");
 
 
 
 
 
+// ********************
+// Callbacks
+// Function () takes callbacks as function and arguments, Example Below
+
+// function func1(callbacks) {
+//     console.log("My Func 1");
+//     callbacks();
+// }
+// function func2(params) {
+//     console.log("My Func 2");
+// }
+// func1(func2);
 
 
+// Another Example Below 
+// We Can Define function in arguments as Annonymous Function  
+// Please Comment Above Code 
 
+// function func1(callback) {
+//     console.log("My Func 1");
+//     callback();
+// }
+// func1(function(){
+//     console.log("My Func 2");
+// })
