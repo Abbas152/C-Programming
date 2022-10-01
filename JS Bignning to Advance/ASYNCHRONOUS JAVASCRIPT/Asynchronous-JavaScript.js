@@ -62,12 +62,7 @@ function func() {
 // setTimeout() take 2 arguments. 
 // 1st Function means it takes Callback and Time Duration in mili second
 
-
-setTimeout(func, 5000);
-for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    
-}
+setTimeout(func, 2000);
 console.log("Script End")
 
 
