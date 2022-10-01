@@ -70,7 +70,7 @@ for (let i = 0; i < 1000; i++) {
 }
 console.log("setTimeout ID is:",id);
 console.log("Clearing setTimeout");
-clearTimeout(id);
+clearTimeout(id);   // This Clearing SetTimeOut is Clear Time and setTimeout will not Execute if it is in Queue.
 console.log("Script End")
 
 
