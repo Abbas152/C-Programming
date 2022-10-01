@@ -70,7 +70,7 @@ for (let i = 0; i < 5000; i++) {
 console.log("Script End")
 
 
-// Set Timeout Execute at Last because Event Loop Control btw Callback Queue and Call Stack, When Call Stack Free Event loop Allow to go Callback Queue code to Callstack and Execute 
+// Set Timeout Execute at Last Even Set Timeout Delay is Finish, because Event Loop Control btw Callback Queue and Call Stack, When Call Stack Free Event loop Allow to go Callback Queue code to Callstack and Execute 
 
 
 
