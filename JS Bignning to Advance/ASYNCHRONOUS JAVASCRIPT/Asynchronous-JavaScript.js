@@ -78,3 +78,15 @@ console.log("Script End")
 // setInterval()
 // Waiting for Intervals:
 // When using the JavaScript function setInterval(), you can specify a callback function to be executed for each interval:
+
+
+
+
+
+
+
+
+
+
+
+// This Is New Code 
