@@ -38,7 +38,7 @@
 
 // ********************
 // // Example with setTimeout()
-// Here We can see Script Start print then print script end immediately and after 5 sec setTimeout Execute on console.
+// Here We can see Script Start then print script end print immediately and after 5 sec setTimeout Execute on console.
 // // This Behaviour is Called Ayschnronous Programming 
 
 // console.log("Script Start");
