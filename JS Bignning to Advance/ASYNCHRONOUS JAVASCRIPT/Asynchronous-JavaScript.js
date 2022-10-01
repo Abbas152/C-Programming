@@ -97,7 +97,7 @@
 
 
 // ********************
-// Callbacks
+// Callbacks in Synchronous Programming
 // Function () takes callbacks as function and arguments, Example Below
 
 // function func1(callbacks) {
@@ -121,3 +121,5 @@
 // func1(function(){
 //     console.log("My Func 2");
 // })
+
+
