@@ -63,8 +63,14 @@ function func() {
 // 1st Function means it takes Callback and Time Duration in mili second
 
 setTimeout(func, 2000);
+for (let i = 0; i < 5000; i++) {
+    console.log("For Loop Running");
+    
+}
 console.log("Script End")
 
+
+// Set Timeout Execute at Last because Event Loop Control btw Callback Queue and Call Stack, When Call Stack Free Event loop Allow to go Callback Queue code to Callstack and Execute 
 
 
 
