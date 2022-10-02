@@ -171,6 +171,7 @@
 // For Create Promise We Can Use new Keyword
 
 // Here Start Promise
+// For Testing Promise Remove 1 Value from Below Array 
 // "Producing code" is code that can take some time
 const kitchen = ["Chicken", "Rice","Gas","Spices","Oil"];
 
@@ -186,6 +187,13 @@ const Biryani = new Promise((resolve,reject)=>{
 
 // "Consuming code" is code that must wait for the result
 // Here Below then() is a Method for Consuming Code 
-Biryani.then((MyBiryani)=>{
+Biryani.then(
+    // 1st Callbacks in then() method for resolve Promise
+    (MyBiryani)=>{
 console.log("Damn I am so Hungry, Let's see What we Have?",MyBiryani);
+}
+,
+// 2nd Callbacks in then() method for reject Promise
+(error)=>{
+    console.log("Biryani Cancel Because Material is Missing");
 })
