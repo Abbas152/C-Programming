@@ -175,14 +175,17 @@
 const kitchen = ["Chicken", "Rice","Gas","Spices","Oil"];
 
 const Biryani = new Promise((resolve,reject)=>{
-    if (resolve.includes("Chicken") && resolve.includes("Rice")&& resolve.includes("Gas")&& resolve.includes("Spices") && resolve.includes("Oil")) {
-        resolve("Biryani Ban Skti Hai.")
+    if (kitchen.includes("Chicken") && kitchen.includes("Rice")&& kitchen.includes("Gas")&& kitchen.includes("Spices") && kitchen.includes("Oil")) {
+        resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Method
     }else{
-        reject("Biryani Cancel.")
+        reject("Biryani Cancel.")             // This is Callback Methods
     }
 })
 
 
 
 // "Consuming code" is code that must wait for the result
-
+// Here Below then() is a Method for Consuming Code 
+Biryani.then((MyBiryani)=>{
+console.log("Damn I am so Hungry, Let's see What we Have?",MyBiryani);
+})
