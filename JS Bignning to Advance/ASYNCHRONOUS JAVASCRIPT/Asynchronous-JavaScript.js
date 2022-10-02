@@ -169,3 +169,20 @@
 // You must use a Promise method to handle promises.
 
 // For Create Promise We Can Use new Keyword
+
+// Here Start Promise
+// "Producing code" is code that can take some time
+const kitchen = ["Chicken", "Rice","Gas","Spices","Oil"];
+
+const Biryani = new Promise((resolve,reject)=>{
+    if (resolve.includes("Chicken") && resolve.includes("Rice")&& resolve.includes("Gas")&& resolve.includes("Spices") && resolve.includes("Oil")) {
+        resolve("Biryani Ban Skti Hai.")
+    }else{
+        reject("Biryani Cancel.")
+    }
+})
+
+
+
+// "Consuming code" is code that must wait for the result
+
