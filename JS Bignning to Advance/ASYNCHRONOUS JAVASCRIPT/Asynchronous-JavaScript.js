@@ -66,7 +66,7 @@
 // const id = setTimeout(func, 2000);
 // for (let i = 0; i < 1000; i++) {
 //     console.log("For Loop Running");
-    
+
 // }
 // console.log("setTimeout ID is:",id);
 // console.log("Clearing setTimeout");
@@ -173,12 +173,12 @@
 // Here Start Promise
 // For Testing Promise Remove 1 Value from Below Array 
 // "Producing code" is code that can take some time
-const kitchen = ["Chicken", "Rice","Gas","Spices","Oil"];
+const kitchen = ["Chicken", "Rice", "Spices", "Oil"];
 
-const Biryani = new Promise((resolve,reject)=>{
-    if (kitchen.includes("Chicken") && kitchen.includes("Rice")&& kitchen.includes("Gas")&& kitchen.includes("Spices") && kitchen.includes("Oil")) {
+const Biryani = new Promise((resolve, reject) => {
+    if (kitchen.includes("Chicken") && kitchen.includes("Rice") && kitchen.includes("Gas") && kitchen.includes("Spices") && kitchen.includes("Oil")) {
         resolve("Hmm! Biryani Ban Skti Hai.") // This is Callback Method
-    }else{
+    } else {
         reject("Biryani Cancel.")             // This is Callback Methods
     }
 })
@@ -187,13 +187,23 @@ const Biryani = new Promise((resolve,reject)=>{
 
 // "Consuming code" is code that must wait for the result
 // Here Below then() is a Method for Consuming Code 
-Biryani.then(
-    // 1st Callbacks in then() method for resolve Promise
-    (MyBiryani)=>{
-console.log("Damn I am so Hungry, Let's see What we Have?",MyBiryani);
-}
-,
-// 2nd Callbacks in then() method for reject Promise
-(error)=>{
-    console.log("Biryani Cancel Because Material is Missing");
-})
+// Example If Below Code We Didn't Understand 
+// Biryani.then( ()=>{} ,()=>{} ) // // Two Callbacks 
+
+// Biryani.then(
+//     // 1st Callbacks in then() method for resolve Promise
+//     (MyBiryani) => {
+//         console.log("Damn I am so Hungry, Let's see What we Have?", MyBiryani);
+//     },
+//     //2nd Callbacks in then() method for reject Promise
+//     (error) => { 
+//         console.log("Biryani Cancel Because Material is Missing");
+//     })
+
+//     // Example With then() and catch() methods, please Comment Above Code
+
+//     Biryani.then((resolve)=>{
+//         console.log("Damn I am so Hungry, Let's see What we Have?", resolve);
+//     }).catch((reject)=>{
+//         console.log("Biryani Cancel Because Material is Missing");
+//     })
